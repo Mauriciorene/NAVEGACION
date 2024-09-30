@@ -1,10 +1,10 @@
-import { View, Text } from ' react-native '
-import React from ' react '
+import React from 'react'
+import { View, Text } from 'react-native'
 
-export default function Settings() {
-  return (
-    <View>
-      <Text>Users</Text>
-    </View> 
+export default function Users() {
+    return (
+        <View>
+            <Text>Users</Text>
+        </View>
     )
 }

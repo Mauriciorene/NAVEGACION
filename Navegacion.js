@@ -3,13 +3,16 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import AntDesign from '@expo/vector-icons/AntDesign';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+import Fontisto from '@expo/vector-icons/Fontisto';
+import Feather from '@expo/vector-icons/Feather';
 
-import Settings from './Screens/Settings';
-import Home from './Screens/Home';
-import Users from './Screens/Users';
-import DetailHome from './Screens/DetailHome';
-import AnotherDetailHome from './Screens/AnotherDetailsHome';
+
+import Settings from './Screen/Settings';
+import Home from './Screen/Home';
+import Users from './Screen/Users';
+import DetailHome from './Screen/DetailHome';
+import AnotherDetailHome from './Screen/AnotherDetailsHome';
 
 const Tab = createBottomTabNavigator();
 
@@ -26,7 +29,7 @@ function MyTabs(){
         options={{
           tabBarLabel: 'HomeSreen',
           tabBarIcon: ({color,size})=> (
-            <AntDesign name='home' size={30} color={color} />
+            <FontAwesome name="home" size={30} color="black" />
           )
         }}
       />
@@ -35,7 +38,7 @@ function MyTabs(){
         options={{
           tabBarLabel: 'Settings',
           tabBarIcon: ({color,size})=> (
-            <AntDesign name='settings' size={30} color={color} />
+            <Fontisto name="player-settings" size={28} color="black" />
           )
         }}
       />
@@ -44,7 +47,7 @@ function MyTabs(){
         options={{
           tabBarLabel: 'Users',
           tabBarIcon: ({color,size})=> (
-            <AntDesign name='users' size={30} color={color} />
+            <Feather name="user" size={30} color="black" />
           )
         }}
       />

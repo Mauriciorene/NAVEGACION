@@ -1,13 +1,13 @@
-import { View, Text } from ' react-native '
-import React from ' react '
-import { useNavigation } from '@react-navigation/native'
+import { View, Text, Button } from 'react-native';
+import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 
-export default function Home() {
+export default function DetailHome() {
   const navigation = useNavigation();
   return (
-    <View style={{ImageBackgroundColor: '#pink', flex:1, justifyContent: 'center', alignItems: 'center'}}>
+    <View style={{ backgroundColor: '#ec929e', flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>DetailHome</Text>
-      <Botton title= 'Mas detalles' onPress= {()=>navigation.navigate("AnotherDetailHome")}></Botton>
-    </View> 
-    )
+      <Button title="Mas detalles" onPress={()=>navigation.navigate("AnotherDetailHome")}></Button>
+    </View>
+  )
 }
